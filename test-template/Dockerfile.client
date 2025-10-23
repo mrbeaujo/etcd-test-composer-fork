@@ -70,3 +70,6 @@ COPY ./go-delete-keys/serial_driver_delete_keys.go ./serial_driver_delete_keys.g
 
 # Building go executable and putting it in Test Composer directory
 RUN go build -o /opt/antithesis/test/v1/main/serial_driver_delete_keys -race
+
+ENV ANTITHESIS_SDK_LOCAL_OUTPUT=/tmp
+ENV ANTITHESIS_OUTPUT_DIR=/tmp
